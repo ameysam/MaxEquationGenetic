@@ -1,5 +1,6 @@
 import numpy as np
 from constants import Constant
+from genetic import Genetic
 
 
 
@@ -17,8 +18,22 @@ best_outputs = []
 
 if __name__ == "__main__":
 
+
+    genetic = Genetic()
+
+
     #Make initial population 8 chromosomes and 6 genes
     init_population = np.random.uniform(-4, 4, size=population_size)
     print(init_population)
+
+    for generation in range(Constant.GENERATION_COUNT):
+
+        print("Generation : {}" . format(generation))
+
+        fitness = genetic.calcFitness(inputs, init_population)
+        print("fitness", fitness)
+
+        best_outputs.append(np.max(fitness))
+        print(best_outputs)
 
         
