@@ -1,0 +1,7 @@
+class Constant:
+
+    SOLUTION_COUNT = 8
+
+    PARENT_MATING_COUNT = 4
+
+    GENERATION_COUNT = 5
