@@ -4,4 +4,6 @@ class Constant:
 
     PARENT_MATING_COUNT = 4
 
-    GENERATION_COUNT = 5
+    GENERATION_COUNT = 10
+
+    EQUATION_INPUTS = [4, -2, 3.5, 5, -11, -4.7]
