@@ -39,12 +39,10 @@ if __name__ == "__main__":
         parents = genetic.getMating(init_population, Constant.PARENT_MATING_COUNT)
 
         crossover = genetic.crossover(offspring_size=(population_size[0] - parents.shape[0], length))
-        print("Crossover")
-        print(crossover)
+        print("Crossover", crossover)
 
         mutation = genetic.mutation()
-        print("Mutation")
-        print(mutation)
+        print("Mutation", mutation)
 
         # Creating the init population based on the parents and offspring.
         init_population[0:parents.shape[0], :] = parents
